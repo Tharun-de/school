@@ -56,9 +56,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Features Section with background image */}
+      <section className="relative py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/homeace.jpeg')" }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-white/70" aria-hidden="true" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Choose {siteContent.site.name}?
@@ -104,13 +110,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 bg-primary text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">
+      {/* Call to Action with background image */}
+      <section className="relative py-20 text-black overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/homereadytojoin-2.jpeg')" }}
+          aria-hidden="true"
+        />
+        {/* Soft overlay to improve text readability */}
+        <div className="absolute inset-0 bg-white/60" aria-hidden="true" />
+        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-6 text-gray-900">
             Ready to Join Our Community?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl mb-8 text-gray-800">
             Take the first step towards an exceptional education experience
           </p>
           <div className="space-x-4">
@@ -122,7 +135,7 @@ export default function Home() {
             </Link>
             <Link
               href="/programs"
-              className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200"
+              className="inline-block border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-200"
             >
               Explore Programs
             </Link>

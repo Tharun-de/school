@@ -49,7 +49,7 @@ export const siteContent = {
     content: "At Gabbles International School, we define ourselves by our strengths. We believe the uniqueness each child brings to learning is essential to the life of the classroom. We don’t slow a child’s progress with narrow expectations or one‑size‑fits‑all benchmarks. Instead, we invite students to set bold goals, reflect on their growth and develop the habits of independent, joyful learners.",
     philosophy: {
       title: "Our Philosophy",
-      image: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "/aboutus.jpeg",
       paragraphs: [
         "Children learn best when they compare, explore and make meaning together. We design experiences that ask learners to question, reason and create — building deep understanding rather than short‑term recall.",
         "We teach respect in every direction: for self, for others and for our shared world. Our classrooms practice kindness and collaboration, and our curriculum includes media literacy, ethics and service.",
@@ -63,7 +63,7 @@ export const siteContent = {
       { number: "95%", label: "College Acceptance Rate" },
       { number: "40+", label: "Countries Represented" }
     ],
-    image: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    image: "/aboutusherosecond.jpeg"
   },
 
   programs: {
