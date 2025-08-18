@@ -62,32 +62,9 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               {siteContent.navigation.map((item) => {
                 const isActive = pathname === item.href;
-                let colorClasses = '';
-                if (item.href === '/') {
-                  colorClasses = isActive
-                    ? 'text-[#dc6755] bg-[#dc6755]/10'
-                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
-                } else if (item.href === '/programs') {
-                  colorClasses = isActive
-                    ? 'text-[#eeb3a9] bg-[#eeb3a9]/10'
-                    : 'text-gray-700 hover:text-[#eeb3a9] hover:bg-[#eeb3a9]/10';
-                } else if (item.href === '/about') {
-                  colorClasses = isActive
-                    ? 'text-[#edaa52] bg-[#edaa52]/10'
-                    : 'text-gray-700 hover:text-[#edaa52] hover:bg-[#edaa52]/10';
-                } else if (item.href === '/location') {
-                  colorClasses = isActive
-                    ? 'text-[#8aa6b2] bg-[#8aa6b2]/10'
-                    : 'text-gray-700 hover:text-[#8aa6b2] hover:bg-[#8aa6b2]/10';
-                } else if (item.href === '/contact') {
-                  colorClasses = isActive
-                    ? 'text-[#dc6755] bg-[#dc6755]/10'
-                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
-                } else {
-                  colorClasses = isActive
-                    ? 'text-primary bg-primary/10'
-                    : 'text-gray-700 hover:text-primary hover:bg-primary/10';
-                }
+                const colorClasses = isActive
+                  ? 'text-[#dc6755] bg-[#dc6755]/10'
+                  : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
                 return (
                   <Link
                     key={item.name}
@@ -152,32 +129,9 @@ export default function Navbar() {
             <div id="mobile-menu" className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               {siteContent.navigation.map((item) => {
                 const isActive = pathname === item.href;
-                let colorClasses = '';
-                if (item.href === '/') {
-                  colorClasses = isActive
-                    ? 'text-[#dc6755] bg-[#dc6755]/10'
-                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
-                } else if (item.href === '/programs') {
-                  colorClasses = isActive
-                    ? 'text-[#eeb3a9] bg-[#eeb3a9]/10'
-                    : 'text-gray-700 hover:text-[#eeb3a9] hover:bg-[#eeb3a9]/10';
-                } else if (item.href === '/about') {
-                  colorClasses = isActive
-                    ? 'text-[#edaa52] bg-[#edaa52]/10'
-                    : 'text-gray-700 hover:text-[#edaa52] hover:bg-[#edaa52]/10';
-                } else if (item.href === '/location') {
-                  colorClasses = isActive
-                    ? 'text-[#8aa6b2] bg-[#8aa6b2]/10'
-                    : 'text-gray-700 hover:text-[#8aa6b2] hover:bg-[#8aa6b2]/10';
-                } else if (item.href === '/contact') {
-                  colorClasses = isActive
-                    ? 'text-[#dc6755] bg-[#dc6755]/10'
-                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
-                } else {
-                  colorClasses = isActive
-                    ? 'text-primary bg-primary/10'
-                    : 'text-gray-700 hover:text-primary hover:bg-primary/10';
-                }
+                const colorClasses = isActive
+                  ? 'text-[#dc6755] bg-[#dc6755]/10'
+                  : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
                 return (
                   <Link
                     key={item.name}
