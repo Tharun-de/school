@@ -77,6 +77,24 @@ export default function About() {
           </div>
         </div>
 
+        {/* Founders Section */}
+        {siteContent.about?.founders?.founders?.length ? (
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+              {siteContent.about.founders.title}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {siteContent.about.founders.founders.map((f, i) => (
+                <div key={i} className="bg-card rounded-xl border p-6 shadow-sm">
+                  <h3 className="text-2xl font-semibold text-gray-900">{f.name}</h3>
+                  <p className="text-sm text-foreground/70 mt-1">{f.title}</p>
+                  <p className="text-foreground/80 mt-4 leading-relaxed">{f.summary}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
       </div>
 
       {/* Full-width Philosophy Section that touches the footer */}

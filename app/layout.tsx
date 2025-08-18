@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import dynamic from 'next/dynamic';
 import { siteContent } from '@/data/content';
 import Script from 'next/script';
 
@@ -50,6 +51,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const MarketingModal = dynamic(() => import('@/components/MarketingModal'), { ssr: false });
   return (
     <html lang="en">
       <body className={poppins.className}>
@@ -79,6 +81,7 @@ export default function RootLayout({
         </Script>
         <Navbar />
         <main className="min-h-screen">
+          <MarketingModal />
           {children}
         </main>
         <Footer />

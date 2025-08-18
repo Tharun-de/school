@@ -1,9 +1,9 @@
 export const siteContent = {
   site: {
-    name: "Gabbles International School",
-    tagline: "Excellence in Education, Building Tomorrow's Leaders",
-    description: "A premier educational institution committed to academic excellence and character development.",
-    logo: "/logo.svg",
+    name: "Little Otters",
+    tagline: "Your Child's Happy Place and Your Trusted Support System",
+    description: "A child enrichment & physical development center supporting working parents with a safe, fun, and engaging environment where children learn, grow, and play.",
+    logo: "/logo-1.png",
   },
   
   navigation: [
@@ -16,121 +16,185 @@ export const siteContent = {
 
   home: {
     hero: {
-      title: "Welcome to Gabbles International School",
-      subtitle: "Excellence in Education, Building Tomorrow's Leaders",
-      description: "Join our community of learners and discover your potential in a nurturing academic environment.",
-      buttonText: "Learn More About Us",
-      buttonLink: "/about",
+      title: "Welcome to Little Otters",
+      subtitle: "Your Child's Happy Place and Your Trusted Support System",
+      description: "We support modern parents while nurturing children through joyful, enriching experiences in a safe, expert‑led environment.",
+      buttonText: "Explore Our Programs",
+      buttonLink: "/programs",
       backgroundImage: "/homepage.jpeg"
     },
     features: [
       {
-        title: "Academic Excellence",
-        description: "Rigorous curriculum designed to challenge and inspire students at every level.",
-        icon: "🎓"
+        title: "Parent‑Centric Spaces",
+        description: "Comfortable lounges and plug‑and‑play work zones so you can work or relax nearby.",
+        icon: "👪"
       },
       {
-        title: "Experienced Faculty",
-        description: "Dedicated teachers committed to nurturing each student's unique potential.",
-        icon: "👨‍🏫"
+        title: "Holistic Development",
+        description: "Screen‑free activities supporting physical, cognitive, emotional, and social growth.",
+        icon: "🌱"
       },
       {
-        title: "Modern Facilities",
-        description: "State-of-the-art classrooms, laboratories, and learning spaces.",
-        icon: "🏫"
+        title: "Expert Care & Safety",
+        description: "Qualified educators and structured programs for a joyful, secure experience.",
+        icon: "🛡️"
       }
     ]
   },
 
   about: {
-    title: "About Gabbles International School",
-    mission: "We exist to help every child discover who they are and how far they can go. Through joyful, challenging learning and a caring community, we nurture curiosity, character and confidence that last a lifetime.",
-    vision: "A warm, inclusive school where every learner is seen, heard and stretched — blending strong academics with creativity, empathy and global citizenship.",
-    content: "At Gabbles International School, we define ourselves by our strengths. We believe the uniqueness each child brings to learning is essential to the life of the classroom. We don’t slow a child’s progress with narrow expectations or one‑size‑fits‑all benchmarks. Instead, we invite students to set bold goals, reflect on their growth and develop the habits of independent, joyful learners.",
+    title: "About Little Otters",
+    mission: "To support working parents while nurturing children in a joyful, safe, and enriching community where families thrive together.",
+    vision: "A vibrant, lively space that balances learning, fun, and community — where parents feel supported and children flourish.",
+    content: "Little Otters is a parent‑centric environment with spaces for you to work, relax, and connect, while your child engages in enriching, structured, and playful learning experiences.",
     philosophy: {
       title: "Our Philosophy",
       image: "/aboutus.jpeg",
       paragraphs: [
-        "Children learn best when they compare, explore and make meaning together. We design experiences that ask learners to question, reason and create — building deep understanding rather than short‑term recall.",
-        "We teach respect in every direction: for self, for others and for our shared world. Our classrooms practice kindness and collaboration, and our curriculum includes media literacy, ethics and service.",
-        "As responsible global citizens, our community values sustainability and stewardship. From everyday choices on campus to long‑term projects, we encourage students to care for people and the planet.",
-        "Most of all, we believe school should feel like possibility. When children feel safe, seen and inspired, they discover the confidence to try, to persist and to flourish."
+        "We champion screen‑free, active environments that nurture physical, cognitive, emotional, and social growth.",
+        "Our curriculum blends Montessori, Steiner Waldorf, John Dewey, Play‑Way, and Multiple Intelligence approaches to meet each child where they are.",
+        "Parents are part of the journey — with supportive lounges, work zones, and a welcoming community to ease the pressures of modern parenting.",
+        "Through movement, music, language, arts, and play, children build confidence, coordination, creativity, and connection."
+      ]
+    },
+    founders: {
+      title: "The Vision Behind Little Otters",
+      founders: [
+        {
+          name: "Dr. Soujanya Sukhavasi",
+          title: "Minimally Invasive & Robotic Surgeon, Infertility Specialist, Professor",
+          summary: "Envisioned a lively, supportive space where parents and children bond and understand developmental milestones in a fun, stress‑free environment. Believes supportive peer groups and community can ease postpartum stress and modern parenting challenges."
+        },
+        {
+          name: "Dr. Nikhil",
+          title: "Paediatric Surgeon",
+          summary: "Brings deep understanding of child development and family wellness to shape programs that are safe, enriching, and developmentally aligned."
+        }
       ]
     },
     stats: [
-      { number: "2,500+", label: "Students" },
-      { number: "150+", label: "Faculty Members" },
-      { number: "95%", label: "College Acceptance Rate" },
-      { number: "40+", label: "Countries Represented" }
+      { number: "3", label: "Hyderabad Locations" },
+      { number: "55+", label: "Art Forms in Workshops" },
+      { number: "6mo–3y", label: "Parent & Child Classes" },
+      { number: "IB/IGCSE", label: "Homework Support" }
     ],
     image: "/aboutusherosecond.jpeg"
   },
 
   programs: {
-    title: "Our Academic Programs",
-    subtitle: "Discover the perfect pathway for your educational journey",
+    title: "Our Programs & Experiences",
+    subtitle: "Fun, learning, and growth for every child — with support for parents",
     programs: [
       {
-        name: "Elementary Program",
-        description: "Building strong foundations in literacy, numeracy, and social skills through engaging, hands-on learning experiences.",
-        grades: "K-5",
-        image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        features: ["Small Class Sizes", "Individualized Learning", "Creative Arts Integration"]
+        name: "Parent & Child Classes",
+        description: "Bonding sessions fostering emotional connections and understanding developmental milestones.",
+        grades: "6mo–3y",
+        image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=2070&q=80",
+        features: ["Bonding & Milestones", "Peer Parent Groups", "Play‑Based Activities"]
       },
       {
-        name: "Middle School Program",
-        description: "Nurturing critical thinking and independence while providing comprehensive support during these crucial developmental years.",
-        grades: "6-8",
-        image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80",
-        features: ["STEM Focus", "Leadership Development", "Extracurricular Activities"]
+        name: "Parent‑Toddler Program",
+        description: "Structured 2‑hour sessions for toddlers to play, learn, and interact in a nurturing environment.",
+        grades: "Toddlers",
+        image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2070&q=80",
+        features: ["2‑Hour Sessions", "Safe & Structured", "Parent Nearby"]
       },
       {
-        name: "High School Program",
-        description: "Preparing students for college and career success through rigorous academics and comprehensive college counseling.",
-        grades: "9-12",
-        image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        features: ["AP Courses", "College Counseling", "Internship Programs"]
+        name: "Preschool & Daycare",
+        description: "Safe, enriching space blending learning with play for social, emotional, and academic growth.",
+        grades: "Ages 2–6",
+        image: "https://images.unsplash.com/photo-1585432959449-b1c5c91a6b57?auto=format&fit=crop&w=2070&q=80",
+        features: ["Play‑Based Learning", "Caring Educators", "Holistic Growth"]
       },
       {
-        name: "International Baccalaureate",
-        description: "A globally recognized program that develops internationally minded students with critical thinking skills.",
-        grades: "11-12",
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        features: ["Global Perspective", "Extended Essay", "Community Service"]
+        name: "After‑School Programs",
+        description: "Homework assistance for IB and Cambridge students plus enrichment like dance, arts & sports.",
+        grades: "K–12",
+        image: "https://images.unsplash.com/photo-1484910292437-025e5d13ce87?auto=format&fit=crop&w=2070&q=80",
+        features: ["IB & IGCSE Support", "Arts & Sports", "Homework Help"]
       },
       {
-        name: "Arts & Music Program",
-        description: "Comprehensive arts education fostering creativity, expression, and cultural appreciation across all grade levels.",
-        grades: "K-12",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        features: ["Visual Arts", "Music Performance", "Digital Media"]
+        name: "Weekend Activities",
+        description: "Zumba, dance classes, and art workshops for creative and physical play.",
+        grades: "All Ages",
+        image: "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&w=2070&q=80",
+        features: ["Zumba", "Dance", "Art Workshops"]
       },
       {
-        name: "Athletics Program",
-        description: "Competitive sports programs that build teamwork, discipline, and school spirit while promoting physical fitness.",
-        grades: "6-12",
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        features: ["15+ Sports", "State Championships", "Fitness Center"]
+        name: "Workshops & Events",
+        description: "Explore creativity through 55 traditional art forms including Madhubani and Patachitra.",
+        grades: "All Ages",
+        image: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=2070&q=80",
+        features: ["55+ Art Forms", "Cultural Exposure", "Hands‑On Learning"]
+      },
+      {
+        name: "Holiday Camps",
+        description: "Themed, educational, and fun camps that keep kids engaged and learning.",
+        grades: "Seasonal",
+        image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=2070&q=80",
+        features: ["Themed Camps", "Skill‑Building", "Fun & Friends"]
+      },
+      {
+        name: "Birthday Parties & Social Gatherings",
+        description: "Themed birthdays, kitty parties, and playdates in a vibrant, safe venue.",
+        grades: "All Ages",
+        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2070&q=80",
+        features: ["Themed Parties", "Event Planning", "Memorable Experiences"]
+      },
+      {
+        name: "Foreign Language Classes (Spanish & French)",
+        description: "Start language learning with fun, interactive Spanish and French sessions.",
+        grades: "Spanish & French",
+        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2070&q=80",
+        features: ["Interactive Sessions", "Cultural Awareness", "Early Exposure"]
+      },
+      {
+        name: "Specialized Programs (ADHD & Autism)",
+        description: "Physical development programs focusing on motor coordination, sensory integration, and social skills.",
+        grades: "Individualized",
+        image: "https://images.unsplash.com/photo-1533228100845-08145b01de14?auto=format&fit=crop&w=2070&q=80",
+        features: ["Motor Coordination", "Sensory Integration", "Social Skills"]
+      },
+      {
+        name: "Phonetics & Handwriting",
+        description: "Build language foundations and fine motor skills for future academic success.",
+        grades: "Early Learners",
+        image: "https://images.unsplash.com/photo-1604908554027-8f3f5c5f3cfe?auto=format&fit=crop&w=2070&q=80",
+        features: ["Phonics", "Fine Motor Skills", "Writing Readiness"]
+      },
+      {
+        name: "Instrumental Music Classes",
+        description: "Explore instruments and develop creativity and cognitive skills through music.",
+        grades: "All Ages",
+        image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=2070&q=80",
+        features: ["Instrument Discovery", "Creative Expression", "Structured Learning"]
+      },
+      {
+        name: "The Little Gym",
+        description: "Structured gymnastics and movement classes integrating physical, cognitive, and social development.",
+        grades: "Ages 3+",
+        image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=2070&q=80",
+        features: ["Gymnastics", "Confidence Building", "Safe & Supportive"]
       }
     ]
   },
 
   location: {
-    title: "Visit Our Campus",
-    subtitle: "Located in the heart of the community",
+    title: "Visit Our Centers",
+    subtitle: "Now in three prime Hyderabad locations",
     address: {
-      street: "HITEC City",
+      street: "Hyderabad (Kokapet • Jubilee Hills • Gachibowli)",
       city: "Hyderabad",
       state: "Telangana",
       zip: "500081",
-      phone: "(555) 123-4567",
-      email: "info@westfieldacademy.edu"
+      phone: "+91 8008830360",
+      email: "info@example.com"
     },
     hours: {
       office: "Monday - Friday: 8:00 AM - 4:00 PM",
       campus: "Monday - Friday: 7:00 AM - 6:00 PM"
     },
-    directions: "Our campus is easily accessible from HITEC City and surrounding areas. Visitor parking is available in the main lot.",
+    directions: "We are easily accessible across Hyderabad with branches in Kokapet, Jubilee Hills, and Gachibowli. Visitor parking is available at each center.",
     mapEmbed: "https://maps.google.com/maps?q=HITEC%20City%2C%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
   },
 
@@ -138,27 +202,44 @@ export const siteContent = {
     title: "Contact Us",
     subtitle: "We'd love to hear from you",
     info: {
-      phone: "(555) 123-4567",
-      email: "info@westfieldacademy.edu",
-      address: "1234 Academic Drive, Springfield, CA 90210"
+      phone: "+91 8008830360",
+      email: "info@example.com",
+      address: "Hyderabad – Kokapet | Jubilee Hills | Gachibowli"
     },
     // If provided, the contact page will render this Google Forms embed instead of the built-in form.
     // Paste the exact "src" URL from Google Forms → Send → <> Embed.
     googleFormEmbedUrl: "https://docs.google.com/forms/d/1jpafcp203U2JuzDpqehJr4Q-lugbOdN3-fukyF4InbE/viewform?embedded=true",
     departments: [
-      { name: "Admissions", email: "admissions@westfieldacademy.edu", phone: "(555) 123-4568" },
-      { name: "Academic Affairs", email: "academics@westfieldacademy.edu", phone: "(555) 123-4569" },
-      { name: "Student Services", email: "students@westfieldacademy.edu", phone: "(555) 123-4570" }
+      { name: "Admissions", email: "admissions@westfieldacademy.edu", phone: "+91 8008830360" },
+      { name: "Academic Affairs", email: "academics@westfieldacademy.edu", phone: "+91 8008830360" },
+      { name: "Student Services", email: "students@westfieldacademy.edu", phone: "+91 8008830360" }
     ]
   },
 
+  marketingModal: {
+    enabled: true,
+    // Set to an image URL or a PDF URL when ready
+    src: "/popup.jpeg",
+    title: "Little Otters",
+    // "pdf" or "image"; autodetected by file extension if omitted
+    type: "image",
+    // "always" to show on every page load; "session" once per tab; "day" once per day
+    showOncePer: "always",
+    // Storage key used to track dismissal; change to force showing again
+    dismissKey: "marketing-modal-v1"
+  },
+
   footer: {
-    copyright: `© ${new Date().getFullYear()} Gabbles International School. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Little Otters. All rights reserved.`,
     quickLinks: [
       { name: "Admissions", href: "/contact" },
       { name: "Academic Calendar", href: "#" },
       { name: "Student Portal", href: "#" },
       { name: "Faculty Directory", href: "#" }
-    ]
+    ],
+    social: {
+      instagram: "https://instagram.com/",
+      x: "https://x.com/"
+    }
   }
 };

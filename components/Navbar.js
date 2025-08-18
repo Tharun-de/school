@@ -10,18 +10,48 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  const BrandText = () => {
+    const name = siteContent.site.name;
+    if (name?.trim().toLowerCase() === 'little otters') {
+      return (
+        <span className="text-2xl font-bold uppercase">
+          <span style={{ color: '#dc6755' }}>L</span>
+          <span style={{ color: '#edaa52' }}>i</span>
+          <span style={{ color: '#edaa52' }}>t</span>
+          <span style={{ color: '#eeb3a9' }}>t</span>
+          <span style={{ color: '#eeb3a9' }}>l</span>
+          <span style={{ color: '#8aa6b2' }}>e</span>
+          <span className="text-primary">{' '}</span>
+          <span style={{ color: '#8aa6b2' }}>O</span>
+          <span style={{ color: '#8aa6b2' }}>t</span>
+          <span style={{ color: '#edaa52' }}>t</span>
+          <span style={{ color: '#edaa52' }}>e</span>
+          <span style={{ color: '#dc6755' }}>r</span>
+          <span style={{ color: '#dc6755' }}>s</span>
+        </span>
+      );
+    }
+    return <span className="text-2xl font-bold text-primary">{name}</span>;
+  };
+
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-[#f5f6f5] shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2" aria-label={siteContent.site.name}>
             {siteContent.site.logo ? (
-              <Image src={siteContent.site.logo} alt="" width={32} height={32} className="h-8 w-auto" aria-hidden="true" />
+              <Image
+                src={siteContent.site.logo}
+                alt=""
+                width={120}
+                height={40}
+                className="h-10 md:h-12 w-auto"
+                aria-hidden="true"
+                priority
+              />
             ) : null}
-            <span className="text-2xl font-bold text-primary">
-              {siteContent.site.name}
-            </span>
+            <BrandText />
           </Link>
 
           {/* Desktop Menu */}

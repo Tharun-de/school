@@ -21,22 +21,9 @@ export default function Programs() {
           </p>
         </div>
 
-        {/* Sidebar + Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar */}
-          <aside className="lg:col-span-1">
-            <div className="bg-gray-900 text-white rounded-xl p-6 sticky top-24">
-              <nav className="space-y-6">
-                <a href="#kindergarten" className="block text-lg hover:text-accent transition-colors">Kindergarten</a>
-                <a href="#cbse" className="block text-lg hover:text-accent transition-colors">CBSE Curriculum</a>
-                <a href="#igcse" className="block text-lg hover:text-accent transition-colors">IGCSE Curriculum</a>
-                <a href="#faqs" className="block text-lg hover:text-accent transition-colors">FAQs</a>
-              </nav>
-            </div>
-          </aside>
-
-          {/* Main content */}
-          <div className="lg:col-span-3">
+        {/* Content */}
+        <div className="grid grid-cols-1 gap-8">
+          <div>
             {/* Programs Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {siteContent.programs.programs.map((program, index) => (
@@ -83,23 +70,7 @@ export default function Programs() {
               ))}
             </div>
 
-            {/* Anchor Sections */}
-            <div id="kindergarten" className="mt-20">
-              <h2 className="text-3xl font-bold mb-4">Kindergarten</h2>
-              <p className="text-foreground/70">Our early years program focuses on foundational literacy, numeracy, and social skills through play‑based learning.</p>
-            </div>
-            <div id="cbse" className="mt-16">
-              <h2 className="text-3xl font-bold mb-4">CBSE Curriculum</h2>
-              <p className="text-foreground/70">A structured, comprehensive pathway aligned with CBSE standards, emphasizing core academics and holistic development.</p>
-            </div>
-            <div id="igcse" className="mt-16">
-              <h2 className="text-3xl font-bold mb-4">IGCSE Curriculum</h2>
-              <p className="text-foreground/70">Internationally recognized program with strong emphasis on inquiry, critical thinking, and subject depth.</p>
-            </div>
-            <div id="faqs" className="mt-16">
-              <h2 className="text-3xl font-bold mb-4">FAQs</h2>
-              <p className="text-foreground/70">Have questions about programs, eligibility, or admissions? Contact our team and we’ll guide you.</p>
-            </div>
+            
 
             {/* CTA Section */}
             <div className="mt-20 bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 md:p-12 text-center text-white">
