@@ -44,17 +44,39 @@ export const siteContent = {
 
   about: {
     title: "About Little Otters",
-    mission: "To support working parents while nurturing children in a joyful, safe, and enriching community where families thrive together.",
-    vision: "A vibrant, lively space that balances learning, fun, and community — where parents feel supported and children flourish.",
-    content: "Little Otters is a parent‑centric environment with spaces for you to work, relax, and connect, while your child engages in enriching, structured, and playful learning experiences.",
+    intro: "At Little Otters, we understand the balancing act that modern parents face—working hard to pursue their professional goals while caring for their children. That's why we've created a child enrichment & physical development center designed to give your child the best of both worlds: a fun, safe, and engaging environment where they can learn, grow, and play, while you enjoy peace of mind knowing that they are in expert hands.",
+    sections: [
+      {
+        heading: "Our Mission: Supporting Parents and Nurturing Children",
+        body: "Our mission is simple: to offer unwavering support to working parents and provide a space where both children and parents feel seen, supported, and cared for. Little Otters is more than just a learning center; it’s a community where families thrive together. Whether you need a few hours to work, run errands, or enjoy a little downtime, Little Otters is here to take care of your child, ensuring they have a joyful, enriching experience while you focus on your day."
+      },
+      {
+        heading: "A Vibrant, Lively Space for Parents & Children",
+        body: "We know that modern parenting isn’t easy, and nuclear families often find themselves without traditional support systems. That’s why we’ve designed Little Otters to be the perfect balance of learning, fun, and community, where both children and parents can feel energized and supported. Imagine a place where you can drop off your child, whether for a few hours or for the whole day, and rest assured that they will be cared for, enriched, and engaged. You can even head out for work, grocery shopping, or simply take time for yourself, knowing your child is in the best hands."
+      },
+      {
+        heading: "Our Parent-Centric Approach",
+        body: "Little Otters is not just about children—it’s about families. We understand the emotional and physical demands on parents, and that’s why we’ve created parent-friendly spaces where you can work, relax, or meet other parents while keeping an eye on your little one. Whether you're waiting in our comfortable lounges or using our plug-and-play work zones, we provide a supportive environment that makes it easy for you to take care of your responsibilities while staying close to your child."
+      },
+      {
+        heading: "The Little Otters Experience: Fun, Learning, and Growth",
+        body: "At Little Otters, your child’s growth and development are our top priority. Our unique curriculum integrates a variety of educational approaches, including Montessori, Steiner Waldorf, John Dewey, and Multiple Intelligence, ensuring that your child learns in a way that resonates with them. But it’s not all about academics—our activities also focus on physical development, emotional well-being, and social skills, helping your child grow into a well-rounded individual."
+      },
+      {
+        heading: "The Vision Behind Little Otters",
+        body: "Founded by Dr. Soujanya Sukhavasi, a renowned Minimally Invasive and Robotic Surgeon, Infertility Specialist, and Professor, and her husband Dr. Nikhil, an experienced Paediatric Surgeon, Little Otters is the culmination of their deep understanding of child development and family wellness. Dr. Soujanya’s vision was to create a lively, supportive space where parents and children could come together, bond, and understand the developmental milestones of childhood in a fun, stress-free environment. Dr. Soujanya’s belief that postpartum stress and the challenges of modern parenting can be alleviated by forming supportive peer groups and a strong community drove the conception of Little Otters. Here, parents can find relief, connect with others, and give their children a solid foundation for growth.",
+        image: "/dr soujanya.jpeg"
+      },
+      {
+        heading: "Our Child-Centered Approach",
+        body: "Little Otters is committed to promoting active, screen-free environments that foster the growth of children in multiple domains—physical, cognitive, emotional, and social. We integrate globally recognized educational frameworks such as Montessori, Steiner Waldorf, John Dewey, Play-Way, and Multiple Intelligence theories into our diverse curriculum. This ensures that every child is nurtured at their own pace and can explore their unique strengths."
+      }
+    ],
     philosophy: {
       title: "Our Philosophy",
       image: "/aboutus.jpeg",
       paragraphs: [
-        "We champion screen‑free, active environments that nurture physical, cognitive, emotional, and social growth.",
-        "Our curriculum blends Montessori, Steiner Waldorf, John Dewey, Play‑Way, and Multiple Intelligence approaches to meet each child where they are.",
-        "Parents are part of the journey — with supportive lounges, work zones, and a welcoming community to ease the pressures of modern parenting.",
-        "Through movement, music, language, arts, and play, children build confidence, coordination, creativity, and connection."
+        ""
       ]
     },
     founders: {
@@ -92,91 +114,91 @@ export const siteContent = {
         name: "Parent & Child Classes",
         description: "These bonding sessions are designed to foster emotional connections while helping parents understand developmental milestones and the needs of their children. The classes also provide opportunities for parents to connect with one another, forming a supportive peer group to alleviate the pressures of modern-day parenting.",
         grades: "6mo–3y",
-        image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Parent‑Toddler Program",
         description: "A wonderful option for toddlers to play, learn, and interact in a structured, safe, and nurturing environment. Meanwhile, parents can relax or attend to other tasks nearby.",
         grades: "Toddlers",
-        image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1516627145497-ae3c4d2a4070?auto=format&fit=crop&w=2070&q=80",
         features: ["2‑Hour Sessions", "Safe & Structured", "Parent Nearby"]
       },
       {
         name: "Preschool & Daycare",
         description: "Our preschool and daycare programs blend learning with play, offering a safe and enriching space for children to grow socially, emotionally, and academically.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1585432959449-b1c5c91a6b57?auto=format&fit=crop&w=2070&q=80",
+        image: "/homeace.jpeg",
         features: []
       },
       {
         name: "After‑School Programs",
         description: "Our after-school programs include homework assistance for IB and Cambridge syllabus students, along with enrichment activities like dance, arts & crafts, and sports.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1484910292437-025e5d13ce87?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Weekend Activities",
         description: "Enjoy weekends with activities like Zumba, dance classes, and art workshops, offering a mix of creative and physical play that your child will love.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1514512364185-4c2b3a1f3a43?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Workshops & Events",
         description: "From Madhubani to Patachitra art forms, our workshops give children the chance to explore their creativity through 55 different art forms and learn new skills.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Holiday Camps",
         description: "Let your child dive into themed, educational, and fun holiday camps. These camps are designed to engage children in learning while having a blast.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Birthday Parties & Social Gatherings",
         description: "Celebrate your child’s special day with themed birthday parties, kitty parties, and playdates. Little Otters is the ideal venue for vibrant social events where children and parents alike can create wonderful memories.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1541635985271-17e51f2f9b8d?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Foreign Language Classes (Spanish & French)",
         description: "Start your child’s journey into language with Spanish and French classes. These fun, interactive sessions open up new horizons and foster an appreciation for culture and communication.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1519681393784-7f8f8e5f1f4f?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Specialized Programs (ADHD & Autism)",
         description: "Little Otters is proud to support children with ADHD and autism by offering specialized physical development programs that focus on motor coordination, sensory integration, and social skills. These programs provide a supportive, structured environment where every child can thrive.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1533228100845-08145b01de14?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "Phonetics & Handwriting",
         description: "Build strong language skills and fine motor development with our phonetics and handwriting programs designed to set the foundation for future academic success.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1604908554027-8f3f5c5f3cfe?auto=format&fit=crop&w=2070&q=80",
+        image: "/homepage.jpeg",
         features: []
       },
       {
         name: "Instrumental Music Classes",
         description: "Music helps children develop creativity and cognitive skills. Our instrumental music classes give your child the opportunity to explore different instruments and enhance their artistic expression.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=2070&q=80",
         features: []
       },
       {
         name: "The Little Gym",
         description: "Additionally, we are thrilled to offer The Little Gym—a globally recognized program that integrates physical development, cognitive growth, and socialization through structured gymnastics and movement classes. These fun, interactive programs boost children’s confidence while helping them develop important skills in a safe, supportive environment.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=2070&q=80",
+        image: "https://images.unsplash.com/photo-1520975693419-ce5c310bd3c1?auto=format&fit=crop&w=2070&q=80",
         features: []
       }
     ]

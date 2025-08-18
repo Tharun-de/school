@@ -180,38 +180,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map Preview */}
-            {siteContent.location?.mapEmbed && (
-              <div className="mt-8 bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6 border-b">
-                  <h3 className="text-xl font-bold text-gray-900">Find Us on the Map</h3>
-                  <p className="text-sm text-gray-600 mt-1">Our campus is easy to reach and has visitor parking on site.</p>
-                </div>
-                <div className="relative w-full h-64">
-                  <iframe
-                    src={siteContent.location.mapEmbed}
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="School Location Map"
-                    className="w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <a
-                    href={siteContent.location.mapEmbed}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block text-primary font-semibold hover:underline"
-                  >
-                    Open in Google Maps
-                  </a>
-                </div>
-              </div>
-            )}
+            {/* Map preview intentionally removed from Contact page */}
           </div>
         </div>
       </div>

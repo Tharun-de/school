@@ -1,7 +1,22 @@
+"use client";
+
 import { siteContent } from '@/data/content';
 import Link from 'next/link';
+import { useEffect, useMemo, useState } from 'react';
 
 export default function Footer() {
+  const branches = useMemo(() => siteContent.location?.branches || [], []);
+  const hasBranches = branches && branches.length > 0;
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    if (!hasBranches || branches.length <= 1) return;
+    const id = setInterval(() => {
+      setActiveIdx((idx) => (idx + 1) % branches.length);
+    }, 7000);
+    return () => clearInterval(id);
+  }, [hasBranches, branches.length]);
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -79,22 +94,55 @@ export default function Footer() {
               )}
             </div>
             <h4 className="text-lg font-semibold mb-4">Find Us</h4>
-            <div className="overflow-hidden rounded-md shadow-md border border-gray-800">
-              <iframe
-                src={siteContent.location.mapEmbed}
-                width="100%"
-                height="180"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="School Location Map (Footer)"
-                className="w-full"
-              ></iframe>
-            </div>
-            <p className="text-gray-400 text-sm mt-3">
-              {siteContent.location.address.street}, {siteContent.location.address.city}
-            </p>
+            {hasBranches ? (
+              <div>
+                <div className="overflow-hidden rounded-md shadow-md border border-gray-800">
+                  <iframe
+                    key={activeIdx}
+                    src={branches[activeIdx].mapEmbed}
+                    width="100%"
+                    height="180"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title={`Location Map (Footer) - ${branches[activeIdx].name}`}
+                    className="w-full"
+                  ></iframe>
+                </div>
+                <div className="flex items-center justify-between mt-3">
+                  <p className="text-gray-400 text-sm">{branches[activeIdx].name}</p>
+                  <div className="flex gap-1">
+                    {branches.map((_, i) => (
+                      <span
+                        key={i}
+                        className={`inline-block h-1.5 w-4 rounded-full ${i === activeIdx ? 'bg-blue-400' : 'bg-gray-700'}`}
+                        aria-hidden="true"
+                      />)
+                    )}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div>
+                <div className="overflow-hidden rounded-md shadow-md border border-gray-800">
+                  <iframe
+                    src={siteContent.location.mapEmbed}
+                    width="100%"
+                    height="180"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="School Location Map (Footer)"
+                    className="w-full"
+                  ></iframe>
+                </div>
+                <p className="text-gray-400 text-sm mt-3">
+                  {siteContent.location.address.street}, {siteContent.location.address.city}
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
