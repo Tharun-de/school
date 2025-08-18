@@ -1,11 +1,11 @@
-# School Website (Next.js)
+# Little Otters Website (Next.js)
 
-A school website built with Next.js 13 (App Router), React 18, and Tailwind CSS. The site is configured for static export and can be deployed on any static host (including Vercel) using the `out/` directory.
+A child enrichment and physical development center website built with Next.js 13 (App Router), React 18, and Tailwind CSS. The site is configured for static export and can be deployed on any static host (including Vercel) using the `out/` directory.
 
 ## Tech stack
 - Next.js 13 App Router
 - React 18
-- Tailwind CSS (+ shadcn/ui components)
+- Tailwind CSS (+ small utility components)
 - Static export via `next.config.js` with `output: 'export'`
 
 ## Quick start
@@ -24,13 +24,13 @@ npm run build
 ## Project structure
 ```
 app/                # routes and pages (App Router)
-  page.tsx         # Home
-  about/page.tsx   # About
-  programs/page.tsx# Programs
-  location/page.tsx# Location
-  contact/page.tsx # Contact
+  page.tsx         # Home (hero, features, CTA)
+  about/page.tsx   # About (intro + mission hero, stats, vision w/ founder photo, sections)
+  programs/page.tsx# Programs (sidebar index, program cards, CTA)
+  location/page.tsx# Location (contact info + hours + horizontally scrollable maps)
+  contact/page.tsx # Contact (Google Form embed or local form)
   icon.svg         # Favicon used by Next.js
-components/        # UI components (Navbar, Footer, etc.)
+components/        # UI components (Navbar, Footer, Reveal, ProgramCard, etc.)
 public/            # Static assets served at "/" (e.g., /logo.svg)
 data/content.js    # Central content (site name, logo path, images, text)
 tailwind.config.ts # Tailwind configuration
@@ -55,7 +55,7 @@ Also update the favicon at `app/icon.svg` by replacing that file with your icon 
 ## Change images (hero, about, programs, etc.)
 All images are controlled in `data/content.js`:
 - Home hero background: `siteContent.home.hero.backgroundImage`
-- About page: `siteContent.about.image` and `siteContent.about.philosophy.image`
+- About page: `siteContent.about.image` (hero image) and `siteContent.about.philosophy.image` (supporting image)
 - Programs cards: `siteContent.programs.programs[i].image`
 
 Use either:
@@ -78,6 +78,10 @@ Theme colors live in CSS variables inside `app/globals.css` under `@layer base`:
 
 Tailwind reads these via `tailwind.config.ts`. Adjust variables to recolor the site, then rebuild.
 
+Header tab colors are unified to the Home accent (currently `#dc6755`). You can tweak in `components/Navbar.js`.
+
+The Programs page background uses `#f7f8f7`.
+
 ## Deploy
 Static export deployment:
 
@@ -91,6 +95,10 @@ Static export deployment:
 
 ## Troubleshooting
 If Vercel shows an error about `routes-manifest.json`, ensure the project is imported as a static site (Framework Preset: "Other") and that Output Directory is `out/`.
+
+If images fail to load for program cards, a client-side fallback swaps to `/homeace.jpeg` (see `components/ProgramCard.tsx`).
+
+If the promotional popup is too frequent, set `siteContent.marketingModal.showOncePer` to `"session"` or disable via `enabled: false` in `data/content.js`.
 
 ## License
 MIT (or your preferred license)
