@@ -121,14 +121,14 @@ export const siteContent = {
         name: "Parent‑Toddler Program",
         description: "A wonderful option for toddlers to play, learn, and interact in a structured, safe, and nurturing environment. Meanwhile, parents can relax or attend to other tasks nearby.",
         grades: "Toddlers",
-        image: "https://images.unsplash.com/photo-1516627145497-ae3c4d2a4070?auto=format&fit=crop&w=2070&q=80",
+        image: "/Parent‑Toddler Program.jpg",
         features: ["2‑Hour Sessions", "Safe & Structured", "Parent Nearby"]
       },
       {
         name: "Preschool & Daycare",
         description: "Our preschool and daycare programs blend learning with play, offering a safe and enriching space for children to grow socially, emotionally, and academically.",
         grades: "",
-        image: "/homeace.jpeg",
+        image: "/Preschool & Daycare.jpg",
         features: []
       },
       {
@@ -142,7 +142,7 @@ export const siteContent = {
         name: "Weekend Activities",
         description: "Enjoy weekends with activities like Zumba, dance classes, and art workshops, offering a mix of creative and physical play that your child will love.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1514512364185-4c2b3a1f3a43?auto=format&fit=crop&w=2070&q=80",
+        image: "/Weekend Activities.jpg",
         features: []
       },
       {
@@ -163,21 +163,21 @@ export const siteContent = {
         name: "Birthday Parties & Social Gatherings",
         description: "Celebrate your child’s special day with themed birthday parties, kitty parties, and playdates. Little Otters is the ideal venue for vibrant social events where children and parents alike can create wonderful memories.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1541635985271-17e51f2f9b8d?auto=format&fit=crop&w=2070&q=80",
+        image: "/Birthday Parties & Social Gatherings.jpg",
         features: []
       },
       {
         name: "Foreign Language Classes (Spanish & French)",
         description: "Start your child’s journey into language with Spanish and French classes. These fun, interactive sessions open up new horizons and foster an appreciation for culture and communication.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1519681393784-7f8f8e5f1f4f?auto=format&fit=crop&w=2070&q=80",
+        image: "/Foreign Language Classes (Spanish & French).jpg",
         features: []
       },
       {
         name: "Specialized Programs (ADHD & Autism)",
         description: "Little Otters is proud to support children with ADHD and autism by offering specialized physical development programs that focus on motor coordination, sensory integration, and social skills. These programs provide a supportive, structured environment where every child can thrive.",
         grades: "",
-        image: "https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?auto=format&fit=crop&w=2070&q=80",
+        image: "/adhd.jpg",
         features: []
       },
       {

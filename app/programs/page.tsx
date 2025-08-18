@@ -11,18 +11,13 @@ export const metadata: Metadata = {
 export default function Programs() {
   return (
     <div className="py-20 relative">
-      {/* Background pattern */}
+      {/* Background color */}
       <div
-        className="absolute inset-0 -z-10 bg-cover"
-        style={{
-          backgroundImage: `url('${siteContent.programs.backgroundImage || ''}')`,
-          backgroundPosition: siteContent.programs.backgroundPosition || 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: siteContent.programs.backgroundSize || 'cover'
-        }}
+        className="absolute inset-0 -z-10"
+        style={{ backgroundColor: '#f7f8f7' }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 -z-10 bg-white/65" aria-hidden="true" />
+      <div className="absolute inset-0 -z-10 bg-transparent" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
