@@ -41,17 +41,13 @@ export default function Home() {
                 {siteContent.home.hero.buttonText}
               </Link>
               <Link
-                href="/programs"
+                href="/about"
                 className="inline-block px-8 py-4 rounded-lg text-lg font-semibold border border-primary text-primary hover:bg-primary/10 transition-colors duration-200"
               >
-                Explore Programs
+                About Us
               </Link>
             </div>
-            <div className="mt-8 flex items-center gap-4 text-sm text-foreground/60">
-              <span className="inline-flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-primary" /> IB</span>
-              <span className="inline-flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-primary" /> CBSE</span>
-              <span className="inline-flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-primary" /> IGCSE</span>
-            </div>
+            {/* Removed curriculum badges for cleaner hero */}
           </div>
         </div>
       </section>

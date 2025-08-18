@@ -14,7 +14,10 @@ export default function Navbar() {
     const name = siteContent.site.name;
     if (name?.trim().toLowerCase() === 'little otters') {
       return (
-        <span className="text-2xl font-bold uppercase">
+        <span
+          className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide"
+          style={{ textShadow: '0 1px 0 #ffffff, 0 1px 8px rgba(0,0,0,.08), 0 0 1px rgba(0,0,0,.20)' }}
+        >
           <span style={{ color: '#dc6755' }}>L</span>
           <span style={{ color: '#edaa52' }}>i</span>
           <span style={{ color: '#edaa52' }}>t</span>
@@ -31,7 +34,7 @@ export default function Navbar() {
         </span>
       );
     }
-    return <span className="text-2xl font-bold text-primary">{name}</span>;
+    return <span className="text-2xl md:text-3xl font-extrabold text-primary" style={{ textShadow: '0 1px 0 #ffffff, 0 1px 8px rgba(0,0,0,.08)' }}>{name}</span>;
   };
 
   return (
@@ -57,20 +60,45 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {siteContent.navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  aria-current={pathname === item.href ? 'page' : undefined}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    pathname === item.href
-                      ? 'text-primary bg-primary/10'
-                      : 'text-gray-700 hover:text-primary hover:bg-primary/10'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {siteContent.navigation.map((item) => {
+                const isActive = pathname === item.href;
+                let colorClasses = '';
+                if (item.href === '/') {
+                  colorClasses = isActive
+                    ? 'text-[#dc6755] bg-[#dc6755]/10'
+                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
+                } else if (item.href === '/programs') {
+                  colorClasses = isActive
+                    ? 'text-[#eeb3a9] bg-[#eeb3a9]/10'
+                    : 'text-gray-700 hover:text-[#eeb3a9] hover:bg-[#eeb3a9]/10';
+                } else if (item.href === '/about') {
+                  colorClasses = isActive
+                    ? 'text-[#edaa52] bg-[#edaa52]/10'
+                    : 'text-gray-700 hover:text-[#edaa52] hover:bg-[#edaa52]/10';
+                } else if (item.href === '/location') {
+                  colorClasses = isActive
+                    ? 'text-[#8aa6b2] bg-[#8aa6b2]/10'
+                    : 'text-gray-700 hover:text-[#8aa6b2] hover:bg-[#8aa6b2]/10';
+                } else if (item.href === '/contact') {
+                  colorClasses = isActive
+                    ? 'text-[#dc6755] bg-[#dc6755]/10'
+                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
+                } else {
+                  colorClasses = isActive
+                    ? 'text-primary bg-primary/10'
+                    : 'text-gray-700 hover:text-primary hover:bg-primary/10';
+                }
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${colorClasses}`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
@@ -122,21 +150,46 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div id="mobile-menu" className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              {siteContent.navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  aria-current={pathname === item.href ? 'page' : undefined}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                    pathname === item.href
-                      ? 'text-primary bg-primary/10'
-                      : 'text-gray-700 hover:text-primary hover:bg-primary/10'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {siteContent.navigation.map((item) => {
+                const isActive = pathname === item.href;
+                let colorClasses = '';
+                if (item.href === '/') {
+                  colorClasses = isActive
+                    ? 'text-[#dc6755] bg-[#dc6755]/10'
+                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
+                } else if (item.href === '/programs') {
+                  colorClasses = isActive
+                    ? 'text-[#eeb3a9] bg-[#eeb3a9]/10'
+                    : 'text-gray-700 hover:text-[#eeb3a9] hover:bg-[#eeb3a9]/10';
+                } else if (item.href === '/about') {
+                  colorClasses = isActive
+                    ? 'text-[#edaa52] bg-[#edaa52]/10'
+                    : 'text-gray-700 hover:text-[#edaa52] hover:bg-[#edaa52]/10';
+                } else if (item.href === '/location') {
+                  colorClasses = isActive
+                    ? 'text-[#8aa6b2] bg-[#8aa6b2]/10'
+                    : 'text-gray-700 hover:text-[#8aa6b2] hover:bg-[#8aa6b2]/10';
+                } else if (item.href === '/contact') {
+                  colorClasses = isActive
+                    ? 'text-[#dc6755] bg-[#dc6755]/10'
+                    : 'text-gray-700 hover:text-[#dc6755] hover:bg-[#dc6755]/10';
+                } else {
+                  colorClasses = isActive
+                    ? 'text-primary bg-primary/10'
+                    : 'text-gray-700 hover:text-primary hover:bg-primary/10';
+                }
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${colorClasses}`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}

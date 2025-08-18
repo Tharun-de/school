@@ -9,7 +9,19 @@ export const metadata: Metadata = {
 
 export default function Programs() {
   return (
-    <div className="py-20">
+    <div className="py-20 relative">
+      {/* Background pattern */}
+      <div
+        className="absolute inset-0 -z-10 bg-cover"
+        style={{
+          backgroundImage: `url('${siteContent.programs.backgroundImage || ''}')`,
+          backgroundPosition: siteContent.programs.backgroundPosition || 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: siteContent.programs.backgroundSize || 'cover'
+        }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 -z-10 bg-white/65" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -21,14 +33,33 @@ export default function Programs() {
           </p>
         </div>
 
-        {/* Content */}
-        <div className="grid grid-cols-1 gap-8">
-          <div>
+        {/* Sidebar + Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Sidebar index */}
+          <aside className="lg:col-span-1">
+            <div className="bg-white rounded-xl p-6 sticky top-24 z-20 border border-[#eeb3a9] shadow-md">
+              <h3 className="text-lg font-semibold mb-4 text-[#eeb3a9]">Programs</h3>
+              <nav className="space-y-3">
+                {siteContent.programs.programs.map((program, index) => (
+                  <a
+                    key={index}
+                    href={`#program-${index}`}
+                    className="block text-sm text-gray-800 hover:text-[#eeb3a9]"
+                  >
+                    {program.name}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </aside>
+
+          <div className="lg:col-span-3">
             {/* Programs Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {siteContent.programs.programs.map((program, index) => (
                 <div
                   key={index}
+                  id={`program-${index}`}
                   className="bg-card rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200 group border"
                 >
                   <div className="relative overflow-hidden">
@@ -41,9 +72,11 @@ export default function Programs() {
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                       />
                     </div>
-                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      Grades {program.grades}
-                    </div>
+                    {program.grades ? (
+                      <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        Grades {program.grades}
+                      </div>
+                    ) : null}
                   </div>
                   
                   <div className="p-6">
@@ -54,17 +87,19 @@ export default function Programs() {
                       {program.description}
                     </p>
                     
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-gray-900">Key Features:</h4>
-                      <ul className="space-y-1">
-                        {program.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center text-sm text-foreground/70">
-                            <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {Array.isArray(program.features) && program.features.length > 0 && (
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-gray-900">Key Features:</h4>
+                        <ul className="space-y-1">
+                          {program.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-center text-sm text-foreground/70">
+                              <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

@@ -17,7 +17,7 @@ export const siteContent = {
   home: {
     hero: {
       title: "Welcome to Little Otters",
-      subtitle: "Your Child's Happy Place and Your Trusted Support System",
+      subtitle: "Your Child's Happy Place and Your Trusted Support System!",
       description: "We support modern parents while nurturing children through joyful, enriching experiences in a safe, expert‑led environment.",
       buttonText: "Explore Our Programs",
       buttonLink: "/programs",
@@ -84,97 +84,100 @@ export const siteContent = {
   programs: {
     title: "Our Programs & Experiences",
     subtitle: "Fun, learning, and growth for every child — with support for parents",
+    backgroundImage: "/aboutusfooter.jpeg",
+    backgroundPosition: "center 30%",
+    backgroundSize: "cover",
     programs: [
       {
         name: "Parent & Child Classes",
-        description: "Bonding sessions fostering emotional connections and understanding developmental milestones.",
+        description: "These bonding sessions are designed to foster emotional connections while helping parents understand developmental milestones and the needs of their children. The classes also provide opportunities for parents to connect with one another, forming a supportive peer group to alleviate the pressures of modern-day parenting.",
         grades: "6mo–3y",
         image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=2070&q=80",
-        features: ["Bonding & Milestones", "Peer Parent Groups", "Play‑Based Activities"]
+        features: []
       },
       {
         name: "Parent‑Toddler Program",
-        description: "Structured 2‑hour sessions for toddlers to play, learn, and interact in a nurturing environment.",
+        description: "A wonderful option for toddlers to play, learn, and interact in a structured, safe, and nurturing environment. Meanwhile, parents can relax or attend to other tasks nearby.",
         grades: "Toddlers",
         image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2070&q=80",
         features: ["2‑Hour Sessions", "Safe & Structured", "Parent Nearby"]
       },
       {
         name: "Preschool & Daycare",
-        description: "Safe, enriching space blending learning with play for social, emotional, and academic growth.",
-        grades: "Ages 2–6",
+        description: "Our preschool and daycare programs blend learning with play, offering a safe and enriching space for children to grow socially, emotionally, and academically.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1585432959449-b1c5c91a6b57?auto=format&fit=crop&w=2070&q=80",
-        features: ["Play‑Based Learning", "Caring Educators", "Holistic Growth"]
+        features: []
       },
       {
         name: "After‑School Programs",
-        description: "Homework assistance for IB and Cambridge students plus enrichment like dance, arts & sports.",
-        grades: "K–12",
+        description: "Our after-school programs include homework assistance for IB and Cambridge syllabus students, along with enrichment activities like dance, arts & crafts, and sports.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1484910292437-025e5d13ce87?auto=format&fit=crop&w=2070&q=80",
-        features: ["IB & IGCSE Support", "Arts & Sports", "Homework Help"]
+        features: []
       },
       {
         name: "Weekend Activities",
-        description: "Zumba, dance classes, and art workshops for creative and physical play.",
-        grades: "All Ages",
+        description: "Enjoy weekends with activities like Zumba, dance classes, and art workshops, offering a mix of creative and physical play that your child will love.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&w=2070&q=80",
-        features: ["Zumba", "Dance", "Art Workshops"]
+        features: []
       },
       {
         name: "Workshops & Events",
-        description: "Explore creativity through 55 traditional art forms including Madhubani and Patachitra.",
-        grades: "All Ages",
+        description: "From Madhubani to Patachitra art forms, our workshops give children the chance to explore their creativity through 55 different art forms and learn new skills.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=2070&q=80",
-        features: ["55+ Art Forms", "Cultural Exposure", "Hands‑On Learning"]
+        features: []
       },
       {
         name: "Holiday Camps",
-        description: "Themed, educational, and fun camps that keep kids engaged and learning.",
-        grades: "Seasonal",
+        description: "Let your child dive into themed, educational, and fun holiday camps. These camps are designed to engage children in learning while having a blast.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=2070&q=80",
-        features: ["Themed Camps", "Skill‑Building", "Fun & Friends"]
+        features: []
       },
       {
         name: "Birthday Parties & Social Gatherings",
-        description: "Themed birthdays, kitty parties, and playdates in a vibrant, safe venue.",
-        grades: "All Ages",
+        description: "Celebrate your child’s special day with themed birthday parties, kitty parties, and playdates. Little Otters is the ideal venue for vibrant social events where children and parents alike can create wonderful memories.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2070&q=80",
-        features: ["Themed Parties", "Event Planning", "Memorable Experiences"]
+        features: []
       },
       {
         name: "Foreign Language Classes (Spanish & French)",
-        description: "Start language learning with fun, interactive Spanish and French sessions.",
-        grades: "Spanish & French",
+        description: "Start your child’s journey into language with Spanish and French classes. These fun, interactive sessions open up new horizons and foster an appreciation for culture and communication.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2070&q=80",
-        features: ["Interactive Sessions", "Cultural Awareness", "Early Exposure"]
+        features: []
       },
       {
         name: "Specialized Programs (ADHD & Autism)",
-        description: "Physical development programs focusing on motor coordination, sensory integration, and social skills.",
-        grades: "Individualized",
+        description: "Little Otters is proud to support children with ADHD and autism by offering specialized physical development programs that focus on motor coordination, sensory integration, and social skills. These programs provide a supportive, structured environment where every child can thrive.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1533228100845-08145b01de14?auto=format&fit=crop&w=2070&q=80",
-        features: ["Motor Coordination", "Sensory Integration", "Social Skills"]
+        features: []
       },
       {
         name: "Phonetics & Handwriting",
-        description: "Build language foundations and fine motor skills for future academic success.",
-        grades: "Early Learners",
+        description: "Build strong language skills and fine motor development with our phonetics and handwriting programs designed to set the foundation for future academic success.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1604908554027-8f3f5c5f3cfe?auto=format&fit=crop&w=2070&q=80",
-        features: ["Phonics", "Fine Motor Skills", "Writing Readiness"]
+        features: []
       },
       {
         name: "Instrumental Music Classes",
-        description: "Explore instruments and develop creativity and cognitive skills through music.",
-        grades: "All Ages",
+        description: "Music helps children develop creativity and cognitive skills. Our instrumental music classes give your child the opportunity to explore different instruments and enhance their artistic expression.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=2070&q=80",
-        features: ["Instrument Discovery", "Creative Expression", "Structured Learning"]
+        features: []
       },
       {
         name: "The Little Gym",
-        description: "Structured gymnastics and movement classes integrating physical, cognitive, and social development.",
-        grades: "Ages 3+",
+        description: "Additionally, we are thrilled to offer The Little Gym—a globally recognized program that integrates physical development, cognitive growth, and socialization through structured gymnastics and movement classes. These fun, interactive programs boost children’s confidence while helping them develop important skills in a safe, supportive environment.",
+        grades: "",
         image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=2070&q=80",
-        features: ["Gymnastics", "Confidence Building", "Safe & Supportive"]
+        features: []
       }
     ]
   },
@@ -188,14 +191,37 @@ export const siteContent = {
       state: "Telangana",
       zip: "500081",
       phone: "+91 8008830360",
-      email: "info@example.com"
+      email: "enquiries@littleotters.in"
     },
     hours: {
       office: "Monday - Friday: 8:00 AM - 4:00 PM",
       campus: "Monday - Friday: 7:00 AM - 6:00 PM"
     },
     directions: "We are easily accessible across Hyderabad with branches in Kokapet, Jubilee Hills, and Gachibowli. Visitor parking is available at each center.",
-    mapEmbed: "https://maps.google.com/maps?q=HITEC%20City%2C%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    mapEmbed: "https://maps.google.com/maps?q=HITEC%20City%2C%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    branches: [
+      {
+        name: "Kokapet",
+        address: "Kokapet, Hyderabad, Telangana",
+        phone: "+91 8008830360",
+        email: "enquiries@littleotters.in",
+        mapEmbed: "https://maps.google.com/maps?q=Little%20Otters%20Kokapet&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      },
+      {
+        name: "Jubilee Hills",
+        address: "Jubilee Hills, Hyderabad, Telangana",
+        phone: "+91 8008830360",
+        email: "enquiries@littleotters.in",
+        mapEmbed: "https://maps.google.com/maps?q=Kidzplore%20Klub%20Jubilee%20Hills&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      },
+      {
+        name: "Gachibowli",
+        address: "Gachibowli, Hyderabad, Telangana",
+        phone: "+91 8008830360",
+        email: "enquiries@littleotters.in",
+        mapEmbed: "https://maps.google.com/maps?q=Little%20Otters%20Preschool%20%26%20Daycare%20Gachibowli%20-%20Best%20Preschool%20%26%20Daycare%20in%20Gachibowli&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    ]
   },
 
   contact: {
@@ -203,16 +229,16 @@ export const siteContent = {
     subtitle: "We'd love to hear from you",
     info: {
       phone: "+91 8008830360",
-      email: "info@example.com",
+      email: "enquiries@littleotters.in",
       address: "Hyderabad – Kokapet | Jubilee Hills | Gachibowli"
     },
     // If provided, the contact page will render this Google Forms embed instead of the built-in form.
     // Paste the exact "src" URL from Google Forms → Send → <> Embed.
     googleFormEmbedUrl: "https://docs.google.com/forms/d/1jpafcp203U2JuzDpqehJr4Q-lugbOdN3-fukyF4InbE/viewform?embedded=true",
     departments: [
-      { name: "Admissions", email: "admissions@westfieldacademy.edu", phone: "+91 8008830360" },
-      { name: "Academic Affairs", email: "academics@westfieldacademy.edu", phone: "+91 8008830360" },
-      { name: "Student Services", email: "students@westfieldacademy.edu", phone: "+91 8008830360" }
+      { name: "Admissions", email: "enquiries@littleotters.in", phone: "+91 8008830360" },
+      { name: "Academic Affairs", email: "enquiries@littleotters.in", phone: "+91 8008830360" },
+      { name: "Student Services", email: "enquiries@littleotters.in", phone: "+91 8008830360" }
     ]
   },
 
@@ -238,7 +264,7 @@ export const siteContent = {
       { name: "Faculty Directory", href: "#" }
     ],
     social: {
-      instagram: "https://instagram.com/",
+      instagram: "https://www.instagram.com/littleottersofficial/?hl=en",
       x: "https://x.com/"
     }
   }

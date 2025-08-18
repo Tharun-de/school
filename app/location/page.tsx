@@ -91,27 +91,35 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Map */}
+          {/* Maps carousel */}
           <div className="lg:sticky lg:top-24 lg:self-start">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="p-6 bg-gray-50">
-                <h2 className="text-2xl font-bold text-gray-900">Campus Location</h2>
-                <p className="text-gray-600 mt-2">
-                  {siteContent.location.address.street}, {siteContent.location.address.city}
-                </p>
+                <h2 className="text-2xl font-bold text-gray-900">Our Branches</h2>
+                <p className="text-gray-600 mt-2">Scroll to view maps</p>
               </div>
               <div className="relative">
-                <iframe
-                  src={siteContent.location.mapEmbed}
-                  width="100%"
-                  height="400"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="School Location Map"
-                  className="w-full"
-                ></iframe>
+                <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 p-4">
+                  {siteContent.location.branches?.map((b, i) => (
+                    <div key={i} className="min-w-[320px] md:min-w-[480px] lg:min-w-[560px] snap-center">
+                      <div className="p-3">
+                        <h3 className="text-lg font-semibold text-gray-900">{b.name}</h3>
+                        <p className="text-sm text-gray-600">{b.address}</p>
+                      </div>
+                      <iframe
+                        src={b.mapEmbed}
+                        width="100%"
+                        height="320"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title={`Map - ${b.name}`}
+                        className="w-full"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
