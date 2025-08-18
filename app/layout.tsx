@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: [siteContent.home.hero.backgroundImage],
   },
   icons: {
-    icon: '/icon.svg',
+    icon: '/logo-1.png',
   },
   themeColor: '#2563eb',
 };

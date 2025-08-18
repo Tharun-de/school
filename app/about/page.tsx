@@ -32,8 +32,8 @@ export default function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <Reveal>
               <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 text-center">
-                {siteContent.about.title}
-              </h1>
+              {siteContent.about.title}
+            </h1>
             </Reveal>
             <Reveal delayMs={120}>
               <p className="text-xl text-black leading-relaxed mb-6 max-w-4xl text-center mx-auto">
@@ -42,14 +42,14 @@ export default function About() {
             </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <Reveal className="w-full h-72 md:h-96 relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 mx-auto">
-                <Image
-                  src={siteContent.about.image}
+                  <Image
+                    src={siteContent.about.image}
                   alt="About Little Otters"
-                  fill
+                    fill
                   className="object-cover"
                   sizes="(min-width: 768px) 50vw, 100vw"
-                  priority
-                />
+                    priority
+                  />
               </Reveal>
               <Reveal delayMs={160}>
                 <div>
@@ -85,13 +85,13 @@ export default function About() {
               </Reveal>
             ))}
           </div>
+          </div>
         </div>
-      </div>
 
         {/* Decorative divider for continuity */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mt-8 h-1 w-full bg-gradient-to-r from-[#dc6755]/30 via-transparent to-[#dc6755]/30 rounded-full" />
-        </div>
+      </div>
 
         {/* Vision section placed early for narrative flow */}
         <section className="mt-12">
@@ -201,14 +201,14 @@ export default function About() {
               <Reveal delayMs={120}>
                 <div className="flex justify-center">
                   <div className="relative mx-auto w-full sm:w-80 md:w-96 lg:w-[28rem] aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-                    <Image
-                      src={siteContent.about.philosophy.image}
+                <Image
+                  src={siteContent.about.philosophy.image}
                       alt="Little Otters community"
-                      fill
-                      className="object-cover"
+                  fill
+                  className="object-cover"
                       sizes="(min-width: 1024px) 28rem, (min-width: 768px) 24rem, 100vw"
-                    />
-                  </div>
+                />
+              </div>
                 </div>
               </Reveal>
             </div>
